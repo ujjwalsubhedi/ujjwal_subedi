@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a = Math.floor(Math.random() * 100) + 1;
+let b = parseInt(prompt("Enter the number\nHint: The number is between 1 and 100"));
+let i;
+let c;
+
+for (i = 0; i < 100; i++) {
+  c = i;
+  if (b > a) {
+    b = parseInt(prompt("Enter a smaller number"));
+  } else if (b < a) {
+  b=parseInt(prompt("Enter a greater number"));
+  } else {
+    prompt("You are correct!\nYour score is " + (100 - c));
+  }
+}
+</script>
+</body>
+</html>
